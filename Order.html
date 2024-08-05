@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Order</title>
+</head>
+<style>
+h2{
+    color: #8b4513;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+table,td{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+<body>
+    <h2>Order</h2>
+    <hr color="#8b4513">
+    <table>
+        <tr>
+            <td>Full Name</td>
+            <td colspan="6"><input type="text" name="full_name" size="30" placeholder="Input Your Name"></td>
+        </tr>
+        <tr>
+            <td>No Hp</td>
+            <td colspan="6"><input type="text" name="no_hp" size="30" placeholder="Input Your Phone Number"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td colspan="6"><input type="email" name="email" size="30" placeholder="example@gmail.com"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td colspan="6"><textarea name="address" cols="40" rows="5"></textarea></td>
+        </tr>
+        <tr>
+        <td>Donut Section</td>
+        <td><select size="1" name="varian_donuts">
+            <option>Original Glazed Flavour</option>
+            <option>Strawberry Flavour</option>
+            <option>Sugar Raised Flavour</option>
+            <option>Gummy Drops Flavour</option>
+            <option>Color CandyFlavour</option>
+            <option>Bavarian Filled Flavour</option>
+        </select>
+        </td>
+        <td>Drink Section</td>
+        <td><select size="1" name="varian_drinks">
+            <option>Americano</option>
+            <option>Caffe Latte</option>
+            <option>Cappucino</option>
+            <option>Matcha</option>
+            <option>Chocolate</option>
+            <option>Mineral Water</option>
+        </select>
+        </td>
+        <td>Ice Cream Section</td>
+        <td><select size="1" name="varian_ice_cream">
+            <option>Vanilla Flavour</option>
+            <option>Chocolate Flavour</option>
+            <option>Berry Nut With Honey Yougurt Flavour</option>
+            <option>Cookies & Cream Flavour</option>
+            <option>Mint Chocolate Flavour</option>
+            <option>Sweat Honey Flavour</option>
+        </select>
+        </td>
+        <tr>
+            <td>Qty</td>
+            <td><input type="text" name="qty" size="10" placeholder="Input your qty"></td>
+            <td>Qty</td>
+            <td><input type="text" name="qty" size="10" placeholder="Input your qty"></td>
+            <td>Qty</td>
+            <td><input type="text" name="qty" size="10" placeholder="Input your qty"></td>
+        </tr>
+        <tr>
+            <td rowspan="6" valign="top">Payment</td>
+        </tr>
+            <tr>
+                <td colspan="6"><input type="checkbox" name="BNI" value=bni>BNI</td>
+            </tr>
+            <tr>
+                <td colspan="6"><input type="checkbox" name="BCA" value=bca>BCA</td>
+            </tr>
+            <tr>
+                <td colspan="6"><input type="checkbox" name="GOPAY" value=gopay>GOPAY </td>
+            </tr>
+            <tr>
+                <td colspan="6"><input type="checkbox" name="DANA" value=dana>DANA </td>
+            </tr>
+            <tr>
+                <td colspan="6"><input type="checkbox" name="OVO" value=ovo>OVO </td>
+            </tr>
+    </tr>
+    <tr>
+    <td rowspan="3"valign="top">Choose</td>
+    <td colspan="6"><input type="checkbox" name="dine_in" value="dine_in">Dine In</td>
+    </tr>
+    <tr>
+        <td colspan="6"><input type="checkbox" name="take_away" value="take_away">Take Away</td>
+    </tr>
+    </table>
+    <hr color="#8b4513">
+    <input type="submit" value="Process">
+</body>
+</html>
